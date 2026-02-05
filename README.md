@@ -1,16 +1,56 @@
-# React + Vite
+Lab 3: Shopping Cart with Local Storage
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Objective:
+Develop a Shopping Cart feature for an e-commerce web application using React/Next.js.
+Users can select products, choose quantities, add items to a cart, and persist cart data using Local Storage.
+The cart icon should display the total number of products added.
 
-Currently, two official plugins are available:
+Requirements
+• Use React or Next.js for implementation
+• Use Tailwind CSS for styling
+• Use at least one ShadCN UI component
+• Cart data must be stored in browser Local Storage
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Functional Requirements
+1. Product List
+- Display a list of products (name, image, price)
+- Each product must have:
+  + Quantity selector
+  + Add to Cart button
 
-## React Compiler
+2. Cart Behavior
+- When clicking Add to Cart:
+  + Product is added to cart
+  + Quantity is updated if product already exists
+- Cart data is saved in Local Storage
+- Cart data is loaded from Local Storage on page reload
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+3. Cart Indicator
+- Display a cart icon in the header
+- Show total number of items in the cart
 
-## Expanding the ESLint configuration
+4. Cart Page
+- Display all products in the cart
+- Show product name, price, quantity, subtotal
+- Allow user to:
+  + Increase/decrease quantity
+  + Remove product
+- Display total cart value
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Technical Requirements
+• Use reusable React components:
+  - ProductCard
+  - CartItem
+  - CartIcon
+• Use React state and useEffect for syncing with Local Storage
+• Use responsive layout for mobile and desktop
+
+Design Considerations
+• UI should be clean and user-friendly
+• Responsive layout
+• Cart updates should feel instant (no page reload)
+
+Submission
+Submit a .doc/.docx file that includes:
+• Deployed website URL
+• GitHub repository link

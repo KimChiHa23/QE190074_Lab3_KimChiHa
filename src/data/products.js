@@ -1,3 +1,12 @@
+/**
+ * Danh sách sản phẩm mẫu cho cửa hàng Nebula Tech Store.
+ * Mỗi sản phẩm bao gồm: 
+ * - id: Mã định danh duy nhất
+ * - name: Tên sản phẩm
+ * - image: Đường dẫn đến hình ảnh (URL)
+ * - description: Mô tả ngắn gọn về sản phẩm
+ * - price: Giá bán (đơn vị: USD)
+ */
 export const products = [
     {
         id: 1,
@@ -42,3 +51,4 @@ export const products = [
         price: 20
     }
 ];
+
